@@ -1,6 +1,6 @@
 #Name: Lehi Chaves
 #CSE111 - Programming with functions
-#Week !
+#Week 1
 #Activity - Tire volume
 
 import math
