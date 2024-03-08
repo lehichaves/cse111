@@ -12,6 +12,7 @@ current_date_and_time = datetime.now()
 
 print(f"{current_date_and_time:%Y-%m-%d}")
 
+#Prices and sizes of tires
 print("This is the tires available: ")
 print("185 / 50 / 14")
 print("205 / 60 / 15")
