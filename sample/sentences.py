@@ -1,10 +1,14 @@
 #Name: Lehi Chaves
 #CSE111 - Programming with functions
 #Week 2
-#Activity - Prove Milestone: Sentences
+#Assignment - W02 Prove: Writing Functions
+
+#I did Exceeding the Requirements to assignment - def get_adjective
 
 
 import random
+
+print()
 
 def main():
 
@@ -40,10 +44,19 @@ def main():
 
 def make_sentence(quantity, tense):
 
-    determiner = get_determiner(quantity)
+    determiner = get_determiner(quantity).capitalize()
     noun = get_noun(quantity)
     verb = get_verb(quantity, tense)
-    return f"{determiner} {noun} {verb}."
+    prepositional_phrase = get_prepositional_phrase(quantity)
+    adjective = get_adjective()
+    return f"{determiner} {noun} {verb} {prepositional_phrase} {adjective}."
+
+def get_prepositional_phrase(quantity):
+    
+    preposition = get_preposition()
+    determiner = get_determiner(quantity)
+    noun = get_noun(quantity)
+    return f"{preposition} {determiner} {noun}"
 
 def get_determiner(quantity):
     
@@ -51,11 +64,9 @@ def get_determiner(quantity):
         words = ["a", "one", "the"]
     else:
         words = ["some", "many", "the"]
-
-    # Randomly choose and return a determiner.
+    
     word = random.choice(words)
-    cap_word = word.capitalize()
-    return word and cap_word
+    return word 
 
 def get_noun(quantity):
       
@@ -67,8 +78,7 @@ def get_noun(quantity):
         "dogs", "girls", "men", "rabbits", "women"]
 
     noun = random.choice(nouns)
-    cap_noun = noun.capitalize()
-    return noun and cap_noun
+    return noun
 
 def get_verb(quantity, tense):
     
@@ -87,7 +97,31 @@ def get_verb(quantity, tense):
         "will walk", "will write"]
 
     verb = random.choice(verbs)
-    cap_verb = verb.capitalize()
-    return verb and cap_verb
+    return verb
+
+def get_preposition():
+
+    list_preposition = ["about", "above", "across", "after", "along",
+    "around", "at", "before", "behind", "below",
+    "beyond", "by", "despite", "except", "for",
+    "from", "in", "into", "near", "of",
+    "off", "on", "onto", "out", "over",
+    "past", "to", "under", "with", "without"]
+   
+    preposition = random.choice(list_preposition)
+    return preposition
+
+#Exceeding the Requirements to assignment
+
+def get_adjective():
+
+    list_adjective = ["golden", "silver", "sad", 
+    "invisible", "green", "beautiful", "happy", 
+    "tall", "short", "famous", "angry", "hungry"]
+
+    adjective = random.choice(list_adjective)
+    return adjective
 
 main()
+
+print()
