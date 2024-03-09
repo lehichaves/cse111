@@ -1,5 +1,10 @@
-import random
+#Name: Lehi Chaves
+#CSE111 - Programming with functions
+#Week 2
+#Activity - Prove Milestone: Sentences
 
+
+import random
 
 def main():
 
