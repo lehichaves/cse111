@@ -51,13 +51,6 @@ def make_sentence(quantity, tense):
     adjective = get_adjective()
     return f"{determiner} {noun} {verb} {prepositional_phrase} {adjective}."
 
-def get_prepositional_phrase(quantity):
-    
-    preposition = get_preposition()
-    determiner = get_determiner(quantity)
-    noun = get_noun(quantity)
-    return f"{preposition} {determiner} {noun}"
-
 def get_determiner(quantity):
     
     if quantity == 1:
@@ -110,6 +103,13 @@ def get_preposition():
    
     preposition = random.choice(list_preposition)
     return preposition
+
+def get_prepositional_phrase(quantity):
+    
+    preposition = get_preposition()
+    determiner = get_determiner(quantity)
+    noun = get_noun(quantity)
+    return f"{preposition} {determiner} {noun}"
 
 #Exceeding the Requirements to assignment
 
