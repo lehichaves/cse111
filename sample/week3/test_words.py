@@ -2,7 +2,7 @@
 
 """Verify that the prefix and suffix functions work correctly."""
 
-from week3.words import prefix, suffix
+from words import prefix, suffix
 import pytest
 
 
