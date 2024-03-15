@@ -1,4 +1,4 @@
-from week3 import cels_from_fahr
+from week3.week3 import cels_from_fahr
 from pytest import approx
 import pytest
 
