@@ -1,0 +1,16 @@
+Machine, Equipament, Employee Name, Done
+Hydraulic Press, Oil Pump, Jim, 2
+Hydraulic Press, Filters, Joey, Yes
+Hydraulic Press, Pipes, Brett, No
+Hydraulic Press, Valves, Joey, Yes
+Hydraulic Press, Motor, Austin, No
+Welding Robot, Bearings, Jim, No
+Welding Robot, Motor, Brett, Yes
+Welding Robot, Cylinder, Austin, No
+Welding Robot, Valves, Austin, Yes
+Welding Robot, Welding wire, Jim, Yes
+Cutting Machine, Oil Level, Brett, Yes
+Cutting Machine, Belts, Jim, Yes
+Cutting Machine, Cutting Blade,Joey, No
+Cutting Machine, Pulleys, Austin, No
+Cutting Machine, Sensors, Jim, Yes

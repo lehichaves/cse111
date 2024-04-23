@@ -70,15 +70,3 @@ if __name__ == "__main__":
     main()
 
 
-else:                    
-                    raise KeyError(product_number)
-
-
-       except FileNotFoundError:
-        print("Error: missing file")        
-    except PermissionError:
-        print("Error: Permission denied to access the file.")
-    except KeyError as e:
-        print(f"Error: unknown product ID in the request.csv file '{e.args[0]}'")
-    except Exception as e:
-        print(f"An unexpected error occurred: {e}")
